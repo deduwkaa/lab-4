@@ -1,90 +1,90 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Римар Данил ТР-25</title>
-  <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  header {
-    background-color: #4CAF50;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-  }
-  
-  table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-  }
-  
-  th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  button {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #d880e3;
+            color: #ffffff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #d880e3;
+            color: white;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #d880e3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <header>
+<header>
     <h1>ТР-25 Римар Данил 14 вар</h1>
-  </header>
+</header>
 
-  <table>
+<table>
     <tr>
-      <th>Опис завдання</th>
-      <th>Кнопка виконання</th>
+        <th>Опис завдання</th>
+        <th>Кнопка виконання</th>
     </tr>
     <tr>
-      <td>1. Створити об’єкт «Співробітник» з властивостями «Прізвище», «Ім’я», «Стать», «Вік».</td>
-      <td><button onclick="createEmployeeObject()">Виконати</button></td>
+        <td>1. Створити об’єкт «Співробітник» з властивостями «Прізвище», «Ім’я», «Стать», «Вік».</td>
+        <td><button onclick="createEmployeeObject()">Виконати</button></td>
     </tr>
     <tr>
-      <td>2. Створити об’єкт «Зарплата», що містить властивостями «Посада» і «Ставка» і методи: порахувати зарплату, змінити ставку, вивести.</td>
-      <td><button onclick="createSalaryObject()">Виконати</button></td>
+        <td>2. Створити об’єкт «Зарплата», що містить властивостями «Посада» і «Ставка» і методи: порахувати зарплату, змінити ставку, вивести.</td>
+        <td><button onclick="createSalaryObject()">Виконати</button></td>
     </tr>
     <tr>
-      <td>3. Реалізувати копіювання властивостей і методів об’єктів «Співробітник» і «Зарплата».</td>
-      <td><button onclick="copyPropertiesAndMethods()">Виконати</button></td>
+        <td>3. Реалізувати копіювання властивостей і методів об’єктів «Співробітник» і «Зарплата».</td>
+        <td><button onclick="copyPropertiesAndMethods()">Виконати</button></td>
     </tr>
     <tr>
-      <td>4. Додати в прототип об’єкту «Співробітник» метод «Показати дані».</td>
-      <td><button onclick="addShowDataMethod()">Виконати</button></td>
+        <td>4. Додати в прототип об’єкту «Співробітник» метод «Показати дані».</td>
+        <td><button onclick="addShowDataMethod()">Виконати</button></td>
     </tr>
     <tr>
-      <td>5. Створити об’єкт «Керівник», що наслідує властивості і методи об’єкту «Співробітник» і має власну властивість «Відділ». Перевизначити в об’єкті «Керівник» метод «Показати дані».</td>
-      <td><button onclick="createManagerObject()">Виконати</button></td>
+        <td>5. Створити об’єкт «Керівник», що наслідує властивості і методи об’єкту «Співробітник» і має власну властивість «Відділ». Перевизначити в об’єкті «Керівник» метод «Показати дані».</td>
+        <td><button onclick="createManagerObject()">Виконати</button></td>
     </tr>
     <tr>
-      <td>6. Завдання на роботу з класами, не виконувати наслідування від попередніх об'єктів! Реалізувати класи «СпівробітникКлас» і «КерівникКлас» з такими же методами і властивостями як і попередні об’єкти. «КерівникКлас» наслідує методи та властивості від «СпівробітникКлас». При реалізації використовувати геттери і сеттери, наприклад, для перевірки даних чи виведення в різних виглядах інформацію.</td>
-      <td><button onclick="showEmployeeAndManagerClass()">Виконати</button></td>
+        <td>6. Завдання на роботу з класами, не виконувати наслідування від попередніх об'єктів! Реалізувати класи «СпівробітникКлас» і «КерівникКлас» з такими же методами і властивостями як і попередні об’єкти. «КерівникКлас» наслідує методи та властивості від «СпівробітникКлас». При реалізації використовувати геттери і сеттери, наприклад, для перевірки даних чи виведення в різних виглядах інформацію.</td>
+        <td><button onclick="showEmployeeAndManagerClass()">Виконати</button></td>
     </tr>
-  </table>
+</table>
 
-  <div id="result">
+<div id="result">
 
-  </div>
-  <script src="./script.js"></script>
+</div>
+<script src="./script.js"></script>
 </body>
 </html>
